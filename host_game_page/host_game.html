@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Game Page</title>
+        
+        <!-- GENERIC CODE -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="../general/initialize.js"></script>
+        <link rel="stylesheet" type="text/css" href="../general/reset.css">
+        <link rel="stylesheet" type="text/css" href="../general/standards.css">
+        
+        <!-- PAGE SPECIFIC CODE -->
+        <link rel="stylesheet" type="text/css" href="host_game.css">
+    </head>
+    <body>
+         
+         <!-- The content being shown while the game is loading. -->
+         <div id="game_setup_page">
+             
+             <!-- The loading animation and text displaying loading status. -->
+             <div id="loading_holder">
+                 <img id="loading_img" src="../resources/loading_circle.png"/>
+                 <div id="loading_txt">CONNECTING</br>YOUR SPHERO</div>
+             </div>
+             
+             <!-- Brings you back to the main menu. -->
+             <div id="cancel_btn">
+                 <div id="cancel_img"></div>
+                 <div>CANCEL</div>
+             </div>
+             
+             <!-- Holds the bar the host will use to calibrate the sphero. -->
+             <div id="calibrate_holder">
+                 <div id="calibrate_title">CALIBRATE YOUR SPHERO</div>
+                 <div id="calibrate_subtitle">(POINT THE BLUE LIGHT TOWARDS YOURSELF)</div>
+                 <div id="slider_holder">
+                     <div id="slider_slider"></div>
+                 </div>
+             </div>
+             
+             <!-- Holds the hosts player number. -->
+             <div id="player-number-holder">
+                 <div id="player-number-label">PLAYER NUMBER</div>
+                 <div id="player-number">123456</div>
+             </div>
+         </div>
+         
+         <!-- The content being shown while the game is playing. -->
+         <div id="in_game_page">
+             
+         </div>
+         
+         <!-- PAGE SPECIFIC CODE -->
+         <script src="host_game.js"></script>
+    </body>
+</html>

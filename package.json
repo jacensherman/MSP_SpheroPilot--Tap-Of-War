@@ -1,0 +1,16 @@
+{
+  "name": "tap_of_war",
+  "version": "1.0.0",
+  "description": "",
+  "main": "menu_page/menu.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nw"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nw": "^0.12.2",
+    "sphero": "^0.3.0"
+  }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Menu Page</title>
+        
+        <!-- GENERIC CODE -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="../general/initialize.js"></script>
+        <link rel="stylesheet" type="text/css" href="../general/reset.css">
+        <link rel="stylesheet" type="text/css" href="../general/standards.css">
+        
+        <!-- PAGE SPECIFIC CODE -->
+        <link rel="stylesheet" type="text/css" href="menu.css">
+    </head>
+    <body>
+        <div id="left-half">
+            <div id="game-menu-logo"></div>
+        </div>
+        <div id="right-half">
+            <div id="button-group">
+                <button class="menu_btn" id="host-match-btn">HOST A MATCH</button>
+                <input type="text" id="join-id-txt" placeholder="INSERT THE HOST'S PLAYER NUMBER"/>
+                <button class="menu_btn" id="join-match-btn">JOIN A MATCH</button>
+                <button class="menu_btn" id="how-to-btn">HOW TO PLAY</button>
+            </div>
+            <div id="player-number-holder">
+                <div id="player-number-label">PLAYER NUMBER</div>
+                <div id="player-number">123456</div>
+            </div>
+        </div>
+        
+        <!-- PAGE SPECIFIC CODE -->
+        <script src="menu.js"></script>
+    </body>
+</html>

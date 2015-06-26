@@ -1,0 +1,8 @@
+Each time a user signs on to play, they are given a unique id.
+They begin a session as the host and the other player enters the host's unique id to join the game.
+
+Game_Table
+	Index
+	PLayer_ID
+	Opponent_ID
+	Opponent_Clicks_Per_Second
