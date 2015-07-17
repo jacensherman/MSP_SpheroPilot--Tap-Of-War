@@ -5,5 +5,10 @@ var gui = require('nw.gui');
 var win = gui.Window.get();
 
 // Sets the width and height of the window.
-win.width = 1280;
-win.height = 720;
+if (win.width == 718 && win.height == 497) {
+	win.width = 1280;
+	win.height = 720;
+}
+
+// Global
+var playerID = -1;

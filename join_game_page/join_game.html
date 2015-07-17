@@ -9,12 +9,39 @@
         <link rel="stylesheet" type="text/css" href="../general/standards.css">
         
         <!-- PAGE SPECIFIC CODE -->
-        <link rel="stylesheet" type="text/css" href="menu.css">
+        <link rel="stylesheet" type="text/css" href="join_game.css">
     </head>
     <body>
-         <button id="move_button">Move</button>
+          <!-- The content being shown while the game is loading. -->
+         <div id="game_setup_page">
+             
+             <!-- The loading animation and text displaying loading status. -->
+             <div id="loading_holder">
+                 <img id="loading_img" src="../resources/loading_circle.png"/>
+                 <div id="loading_txt">CONNECTING</br>TO GAME</div>
+             </div>
+             
+             <!-- Brings you back to the main menu. -->
+             <div id="cancel_btn">
+                 <div id="cancel_img"></div>
+                 <div>CANCEL</div>
+             </div>
+         </div>
+         
+         <!-- The content being shown while the game is playing. -->
+         <div id="in_game_page">
+             <!-- Brings you back to the main menu. -->
+             <div id="forfeit_btn">
+                 <div id="cancel_img"></div>
+                 <div>FORFEIT</div>
+             </div>
+             
+             <div id="tap_now">
+                 TAP</br>NOW
+             </div>
+         </div>
          
          <!-- PAGE SPECIFIC CODE -->
-         <script src="host.js"></script>
+         <script src="join_game.js"></script>
     </body>
 </html>
